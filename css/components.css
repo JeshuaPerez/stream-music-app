@@ -1,0 +1,105 @@
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary {
+    background-color: var(--accent);
+    color: white;
+    padding: 0.6rem 1rem;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.btn-price {
+    margin-top: 1rem;
+    align-self: center;
+    background-color: var(--accent);
+    color: white;
+    padding: 0.6rem 1.4rem;
+    border-radius: var(--radius);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-price:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: var(--radius);
+    margin-bottom: 0.8rem;
+}
+
+.card h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+/* Botones, pagina secundaria /*
+
+/* =========================
+   ALBUM ACTIONS
+========================= */
+
+.btn-cart {
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.secondary-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    background-color: var(--accent);
+    color: white;
+}
