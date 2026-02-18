@@ -15,8 +15,6 @@
     
 </head>
 
-<body>
-
 <header class="header">
     <div class="logo">
         <a href="index.html">MusicStream</a>
@@ -32,52 +30,98 @@
 </header>
 
 
-<main class="cart-layout">
+<main class="checkout-container">
 
-    <!-- CART ITEMS -->
-    <section class="cart-items">
+    <!-- LEFT SIDE -->
+    <section class="checkout-form">
 
-        <h1>Your Cart</h1>
+        <!-- PAYMENT METHOD -->
+        <div class="checkout-section">
+            <h2>Payment Method</h2>
 
-        <div class="cart-item">
-            <img src="assets/High Voltage__(1976).jpeg" alt="Album">
+            <div class="payment-options">
+                <label class="payment-card">
+                    <input type="radio" name="payment" checked>
+                    <span>Visa</span>
+                </label>
 
-            <div class="item-info">
-                <h3>High Voltage</h3>
-                <p>$9.99</p>
+                <label class="payment-card">
+                    <input type="radio" name="payment">
+                    <span>Mastercard</span>
+                </label>
+
+                <label class="payment-card">
+                    <input type="radio" name="payment">
+                    <span>American Express</span>
+                </label>
             </div>
 
-            <p class="item-qty">Qty: 1</p>
+            <div class="form-group">
+                <input type="text" placeholder="Card Number">
+            </div>
 
+            <div class="form-row">
+                <input type="text" placeholder="MM/YY">
+                <input type="text" placeholder="CVV">
+            </div>
+        </div>
 
-            <button class="remove-btn">🗑</button>
+        <!-- BILLING ADDRESS -->
+        <div class="checkout-section">
+            <h2>Billing Address</h2>
+
+            <div class="form-group">
+                <input type="text" placeholder="Full Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Address">
+            </div>
+
+            <div class="form-row">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="Postal Code">
+            </div>
+
+            <div class="form-group">
+                <input type="text" placeholder="Country">
+            </div>
         </div>
 
     </section>
 
-    <!-- ORDER SUMMARY -->
-    <aside class="cart-summary">
+    <!-- RIGHT SIDE SUMMARY -->
+    <aside class="checkout-summary">
 
-        <h2>High Voltage, AC/DC</h2>
+        <h3>Order Summary</h3>
 
-        <div class="summary-row">
-            <span>Subtotal</span>
+        <div class="summary-item">
+    <img src="assets/High Voltage__(1976).jpeg" alt="Album Cover">
+
+    <div class="summary-info">
+        <p>Cosmic Echoes</p>
+        <small>Digital Album</small>
+    </div>
+
+    <span>$9.99</span>
+</div>
+
+
+        <div class="summary-item">
+            <p>Neon Horizon</p>
             <span>$9.99</span>
         </div>
 
-        <div class="summary-row">
-            <span>Tax</span>
-            <span>$1.00</span>
-        </div>
+        <hr>
 
         <div class="summary-total">
-            <span>Total</span>
-            <span>$10.99</span>
+            <p>Total</p>
+            <span>$19.98</span>
         </div>
 
-        <a href="checkout.html" class="btn-primary checkout-btn">
-            Proceed to Checkout
-        </a>
+        <button class="btn-primary place-order">
+            Place Order
+        </button>
 
     </aside>
 
@@ -85,3 +129,4 @@
 
 </body>
 </html>
+
