@@ -3,7 +3,7 @@ Proyecto de Skill
 En este Proyecto de skill, el Maestro Trainer de campus lands nos ha retado a crear una página html, siguendo una estructura semantica y replicar la pagina de ejemplo dada, el resultado como campers, es que pongamos en práctica todo lo aprendido durante el skill.
 
 Corrección del examen:
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -91,11 +91,11 @@ Corrección del examen:
 </main>
 
 </body>
-</html> -->
+</html>
 
 Que fue lo que hice mal:
 No trabaaje directamente en el body y estructure todo en el header jaja error de novato.
-<!-- </head>
+</head>
 
 <header>
    ...
@@ -105,11 +105,11 @@ No trabaaje directamente en el body y estructure todo en el header jaja error de
 </header>
 
 <body>
-</body> -->
+</body>
 
 Estructura correcta:
 Correción por defender; esta seria la estructura correcta que debí haber utilizado.
-<!-- <html>
+<html>
   <head>...</head>
 
   <body>
@@ -125,4 +125,4 @@ Correción por defender; esta seria la estructura correcta que debí haber utili
     </main>
 
   </body>
-</html> -->
+</html>
