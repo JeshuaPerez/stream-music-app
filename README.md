@@ -3,21 +3,21 @@ Proyecto de Skill
 En este Proyecto de skill, el Maestro Trainer de campus lands nos ha retado a crear una página html, siguendo una estructura semantica y replicar la pagina de ejemplo dada, el resultado como campers, es que pongamos en práctica todo lo aprendido durante el skill.
 
 Corrección del examen:
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purchase History</title>
+< !DOCTYPE html>
+< html lang="en">
+< head>
+    < meta charset="UTF-8">
+    < meta name="viewport" content="width=device-width, initial-scale=1.0">
+    < title>Purchase History< /title>
 
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
-</head>
+< /head>
 
-<body>
+< body>
 
-<header class="header">
+< header class="header">
 
     <div class="logo">MusicStream</div>
 
@@ -37,9 +37,9 @@ Corrección del examen:
         <img src="assets/Perfil.jpeg" alt="User profile">
     </div>
 
-</header>
+< /header>
 
-<main>
+< main>
 
     <section class="tracklist-section">
 
@@ -88,31 +88,32 @@ Corrección del examen:
 
     </section>
 
-</main>
+< /main>
 
-</body>
-</html>
+< /body>
+< /html>
 
 Que fue lo que hice mal:
 No trabaaje directamente en el body y estructure todo en el header jaja error de novato.
-</head>
+< /head>
 
-<header>
+< header>
    ...
-   <section>
-      <table>...</table>
-   </section>
-</header>
+   < section>
+      < table>...< /table>
+   < /section>
+< /header>
 
-<body>
-</body>
+< body>
+< /body>
 
 Estructura correcta:
 Correción por defender; esta seria la estructura correcta que debí haber utilizado.
-<html>
-  <head>...</head>
 
-  <body>
+ < html>
+  < head>...< /head>
+
+  < body>
 
     <header>
       ...
@@ -124,5 +125,5 @@ Correción por defender; esta seria la estructura correcta que debí haber utili
       </section>
     </main>
 
-  </body>
-</html>
+  < /body>
+< /html>
