@@ -688,3 +688,58 @@ main {
     transform: scale(1.05);
 }
 
+
+/* =========================
+   PULIDO FINAL
+========================= */
+
+.remove-btn {
+    color: var(--text-secondary);
+}
+
+.remove-btn:hover {
+    color: #ef4444;
+}
+
+.search-bar input {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Encabezado adaptable en celular */
+@media (max-width: 767px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .search-bar {
+        order: 3;
+        flex: 1 1 100%;
+    }
+
+    .nav-links {
+        order: 2;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+    }
+
+    main {
+        padding: 1rem;
+    }
+}
