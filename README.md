@@ -1,47 +1,83 @@
 # MusicStream
 
-Maqueta de una tienda de música digital con el catálogo de AC/DC: portada con álbumes, detalle de disco, reproductor, carrito, checkout y biblioteca del usuario.
+Interfaz completa de una plataforma de streaming y venta de música: siete
+pantallas que cubren el recorrido entero del usuario, desde descubrir un álbum
+hasta pagarlo. Maquetadas a mano con HTML5 semántico y CSS3, sin frameworks,
+sin plantillas y sin librerías.
 
-**Demo en vivo:** https://jeshuaperez.github.io/Proyecto_Stream_Music_App_Jeshua_Perez/
+**Demo en vivo:** https://jeshuaperez.github.io/stream-music-app/
 
-## Contexto
+El reto era replicar un diseño dado respetando la estructura semántica. Lo tomé
+como ejercicio de disciplina: nada de `div` para todo, cada región de la página
+con la etiqueta que le corresponde.
 
-Proyecto de Skill de Campuslands. El reto era replicar una página de ejemplo usando una estructura HTML semántica, y poner en práctica lo aprendido durante el Skill. Después lo retomé para pulirlo: corregí rutas rotas, unifiqué la navegación, agregué los estilos que faltaban en la página de perfil y lo adapté a celular.
+## Pantallas
 
-## Páginas
-
-| Página | Contenido |
+| Página | Qué resuelve |
 |---|---|
-| `index.html` | Portada del artista y álbumes más vendidos |
-| `album-detail.html` | Detalle de un álbum con lista de canciones |
-| `player.html` | Reproductor con controles y cola de reproducción |
-| `cart.html` | Carrito de compras con resumen del pedido |
+| `index.html` | Portada: artista destacado, novedades de la semana y los temas más vendidos |
+| `album-detail.html` | Ficha del álbum con su lista de canciones |
+| `player.html` | Reproductor con la pista en curso |
+| `cart.html` | Carrito con el resumen del pedido |
 | `checkout.html` | Método de pago y dirección de facturación |
 | `profile.html` | Biblioteca del usuario y confirmación de compra |
 
-## Tecnologías
+## Cómo está construido
 
-- HTML5 semántico
-- CSS3: variables CSS, Flexbox, Grid y diseño adaptable (mobile first)
-- Sin frameworks ni JavaScript: es una maqueta de interfaz
+- **HTML5 semántico**: 6 `main`, 6 `header`, 6 `nav`, 10 `section`, 8 `article`
+  y 4 `aside` repartidos entre las páginas. La estructura se entiende leyendo
+  el marcado, sin necesidad de abrir los estilos.
+- **CSS separado por responsabilidad**, en lugar de un archivo único:
+
+  | Archivo | Contiene |
+  |---|---|
+  | `css/main.css` | Reset y bases |
+  | `css/layout.css` | Estructura y disposición de cada pantalla |
+  | `css/components.css` | Piezas reutilizables: tarjetas, botones, navegación |
+  | `css/profile.css` | Biblioteca y confirmación de compra |
+
+- **Diseño adaptable** a pantallas de celular.
 
 ## Estructura
 
 ```
-index.html, album-detail.html, player.html,
-cart.html, checkout.html, profile.html
-css/
-  main.css         Variables y base
-  layout.css       Estructura de cada página
-  components.css   Componentes (botones, tarjetas)
-  profile.css      Estilos de la biblioteca
-assets/            Portadas de álbumes, avatar y favicon
+index.html          Portada
+album-detail.html   Detalle del álbum
+player.html         Reproductor
+cart.html           Carrito
+checkout.html       Pago
+profile.html        Perfil y biblioteca
+css/                main.css · layout.css · components.css · profile.css
+assets/             Portadas, imágenes y favicon
 ```
 
-## Correrlo en local
+## Cómo verlo
 
-Abre `index.html` en el navegador. No necesita instalación.
+No necesita instalación ni servidor:
 
-## Autor
+```bash
+git clone https://github.com/JeshuaPerez/stream-music-app.git
+cd stream-music-app
+```
+
+Abre `index.html` en cualquier navegador.
+
+## Alcance
+
+Es un proyecto de maquetación: no lleva JavaScript, así que el carrito, el
+reproductor y el pago son la interfaz, no la funcionalidad. Para ver trabajo con
+lógica y datos, mira
+[FoodieRank](https://github.com/JeshuaPerez/FoodieRank-backend) (API REST con
+Node.js y MongoDB) o
+[Gestión de inmuebles](https://github.com/JeshuaPerez/gestion-inmuebles) (CRUD
+en JavaScript).
+
+## Nota sobre el contenido
+
+Las portadas de álbum y el nombre de la banda pertenecen a sus respectivos
+dueños y se usan únicamente con fines educativos, dentro de un ejercicio
+académico sin fin comercial.
+
+---
 
 Jeshua Pérez · [Portafolio](https://jeshuaperez.github.io/portafolio/) · [GitHub](https://github.com/JeshuaPerez)
